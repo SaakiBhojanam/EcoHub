@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F2F2F2;
+  background-image: url('earth.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(0, 100, 0, 0);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: black;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #006400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+
+select {
+  width: 200px;
+  height: 35px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 16px;
+}
+
+button {
+  padding: 15px 20px;
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+#result {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#carbon-footprint {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+}
+

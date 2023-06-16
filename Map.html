@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recycling Center Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url("earth.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #map {
+            width: 800px;
+            height: 600px;
+            margin: 50px auto;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+</head>
+<body>
+    <h1 style="font-size: 36px;">Recycling Center Map</h1>
+    <div id="map"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script>
+        // Leaflet code
+        var map = L.map('map').setView([40.4862, -88.9937], 13); // Coordinates for Bloomington Normal, Illinois
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        }).addTo(map);
+
+        // Markers for recycling centers
+        var recyclingCenters = [
+            {
+                name: "Recycling Center 1",
+                address: "100 N Roosevelt Ave, Bloomington, IL 61701",
+                coordinates: [40.4831, -88.9901]
+            },
+            {
+                name: "Recycling Center 2",
+                address: "1528 Mabel Rd, Bloomington, IL 61705",
+                coordinates: [40.5101, -88.9989]
+            },
+            {
+                name: "Recycling Center 3",
+                address: "2148 Trilakes Rd, Bloomington, IL 61704",
+                coordinates: [40.4985, -88.9877]
+            },
+            {
+                name: "Recycling Center 4",
+                address: "200 N Linden St, Normal, IL 61761",
+                coordinates: [40.4962, -88.9574]
+            }
+            // Add more recycling centers as needed
+        ];
+
+        recyclingCenters.forEach(function (center) {
+            L.marker(center.coordinates).addTo(map)
+                .bindPopup("<b>" + center.name + "</b><br>" + center.address);
+        });
+    </script>
+</body>
+</html>

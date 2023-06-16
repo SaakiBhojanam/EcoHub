@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carbon Emission Tips</title>
+  <style>
+    body {
+  background-image: url('earth.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 150px;
+  margin-top: 0; /* Remove default margin */
+}
+
+button {
+  padding: 30px 60px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#tip {
+  font-size: 32px;
+  color: #756253;
+  margin-top: 80px;
+}
+
+#linkContainer {
+      font-size: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>How to Reduce Your Carbon Emissions</h1>
+    <button onclick="showRandomTip()">Generate Tip</button>
+    <p id="tip"></p>
+    <p id="linkContainer" style="display: none;">
+      Find Recycling Centers Near You: <a href="Recycling.html" id="recycling-link">Click here</a>
+    </p>
+  </div>
+
+  <script>
+    var tips = [
+      "Use public transportation or carpool whenever possible.",
+      "Turn off lights and unplug electronics when not in use.",
+      "Choose energy-efficient appliances and light bulbs.",
+      "Reduce, reuse, and recycle.",
+      "Plant trees and support reforestation efforts.",
+      "Eat less meat and choose sustainable food options.",
+      "Conserve water by taking shorter showers and fixing leaks.",
+      "Try to recycle as much as possible by visiting recycling centers.",
+      "Support renewable energy sources like solar and wind power.",
+      "Avoid single-use plastics and opt for reusable alternatives.",
+      "Educate others about the importance of reducing carbon emissions."
+    ];
+
+     function showRandomTip() {
+      var tipElement = document.getElementById("tip");
+      var linkContainer = document.getElementById("linkContainer");
+
+      var randomIndex = Math.floor(Math.random() * tips.length);
+      tipElement.innerHTML = tips[randomIndex];
+      linkContainer.style.display = "block";
+    }
+  </script>
+</body>
+</html>
