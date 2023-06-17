@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Carbon Footprint Calculator</h1>
+    <label for="location">I live in</label>
+    <select id="location">
+      <option value="North America">North America</option>
+      <option value="Europe">Europe</option>
+      <option value="Asia">Asia</option>
+    </select>
+
+    <label for="house-size">In a</label>
+    <select id="house-size">
+      <option value="small">Small-sized house</option>
+      <option value="medium">Medium-sized house</option>
+      <option value="large">Large-sized house</option>
+    </select>
+
+    <label for="num-people">Which I share with</label>
+    <select id="num-people">
+      <option value="1">One other person</option>
+      <option value="2">Two other people</option>
+      <option value="3">Three other people</option>
+      <option value="4">Four other people</option>
+    </select>
+
+    <label for="heating-cooling">My heating / cooling bills are</label>
+    <select id="heating-cooling">
+      <option value="low">Low</option>
+      <option value="normal">Normal</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="electricity">I buy my electricity from</label>
+    <select id="electricity">
+      <option value="standard">My provider's standard plan</option>
+      <option value="renewable">A renewable energy plan</option>
+      <option value="solar">My own solar panels</option>
+    </select>
+
+    <label for="energy-conservation">And I tend</label>
+    <select id="energy-conservation">
+      <option value="not-conserve">Not to conserve energy</option>
+      <option value="occasionally-conserve">To occasionally conserve energy</option>
+      <option value="always-conserve">To always conserve energy</option>
+    </select>
+
+    <label for="travel-method">I travel mostly by</label>
+    <select id="travel-method">
+      <option value="car">Car (average user)</option>
+      <option value="public-transportation">Public Transportation</option>
+      <option value="bicycle">Bicycle</option>
+      <option value="walking">Walking</option>
+    </select>
+
+    <label for="holiday-distance">And usually go on vacation</label>
+    <select id="holiday-distance">
+      <option value="short-flight">A short flight away</option>
+      <option value="long-flight">A long flight away</option>
+      <option value="road-trip">On a road trip</option>
+      <option value="staycation">On a staycation</option>
+    </select>
+
+    <label for="meat-consumption">I am</label>
+    <select id="meat-consumption">
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="occasional-meat-eater">An occasional meat-eater</option>
+      <option value="regular-meat-eater">A regular meat-eater</option>
+    </select>
+
+    <label for="food-source">And usually eat</label>
+    <select id="food-source">
+      <option value="processed-food">Mostly processed food</option>
+      <option value="local-produce">Mostly fresh, locally-grown produce</option>
+      <option value="organic-produce">Mostly fresh, organic produce</option>
+    </select>
+
+    <label for="waste-production">The amount of waste I produce is</label>
+    <select id="waste-production">
+      <option value="low">Low</option>
+      <option value="average">Average</option>
+      <option value="high">High</option>
+    </select>
+
+    <label for="waste-disposal">And it is mostly</label>
+    <select id="waste-disposal">
+      <option value="recycled">Recycled</option>
+      <option value="landfilled">Landfilled</option>
+      <option value="composted">Composted</option>
+    </select>
+
+    <button onclick="calculateCarbonFootprint()" style="font-size: 15px;">Calculate</button>
+    <div id="result">
+       <p id="carbon-footprint">Your carbon footprint is: <span id="carbon-value"></span> <span id="metric-unit" style="display: none;">metric tons per year</span></p>
+         <p id="tip" style="font-size: 20px;">Get tips on how to reduce your carbon footprint: <a href="tips.html" id="tip-link">Click here</a></p>
+    </div>
+  </div>
+</body>
+</html>
