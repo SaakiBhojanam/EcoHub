@@ -31,9 +31,4 @@ EcoHub is a web application aimed at promoting environmental awareness and susta
 
 ## Credits
 
-EcoHub is developed and maintained by the EcoHub team. Special thanks to our contributors and the open-source community for their support and feedback.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+EcoHub is developed and maintained by me. Special thanks to our contributors and the open-source community for their support and feedback.
