@@ -15,6 +15,7 @@ body {
       justify-content: center;
       align-items: center;
       height: 100vh;
+      position: relative;
     }
 
     h1 {
@@ -43,4 +44,12 @@ body {
 
     #links a:hover {
       background-color: #0c6323;
+    }
+
+    #logo {
+      position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: auto;
     }
