@@ -1,0 +1,42 @@
+body {
+  background-image: url('earth.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 150px;
+  margin-top: 0; /* Remove default margin */
+}
+
+button {
+  padding: 30px 60px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#tip {
+  font-size: 32px;
+  color: #756253;
+  margin-top: 80px;
+}
+
+#linkContainer {
+      font-size: 20px;
+    }
