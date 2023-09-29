@@ -1,6 +1,6 @@
 # EcoHub
 
-EcoHub is a web application aimed at promoting environmental awareness and sustainability. It provides users with various tools and resources to help them make eco-friendly choices and contribute to a greener planet. This project is extremely bare-bones as it was made in less than 24 hours for a hacking competition. Feel free to make any changes and contact me at saaki.bhojanam@gmail.com.
+EcoHub is a web application aimed at promoting environmental awareness and sustainability. It provides users with various tools and resources to help them make eco-friendly choices and contribute to a greener planet. This project is extremely bare-bones as it was made in less than 24 hours for a hackathon. Feel free to make any changes and contact me at saaki.bhojanam@gmail.com.
 
 ## Features
 
@@ -20,7 +20,7 @@ EcoHub is a web application aimed at promoting environmental awareness and susta
 
 3. Ensure that the necessary dependencies, such as HTML, CSS, and image files, are properly configured and accessible.
 
-4. Open the EcoHub homepage (`index.html`) in a web browser to access the application.
+4. Open the EcoHub homepage (`EcoHub.html`) in a web browser to access the application.
 
 ## Technologies Used
 
